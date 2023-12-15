@@ -1,4 +1,4 @@
-const Cite = require("../models/cite.model");
+const Cite = require("../models/cites.model");
 
 exports.createCite = async (req, res) => {
   try {

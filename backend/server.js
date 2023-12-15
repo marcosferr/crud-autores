@@ -9,8 +9,8 @@ require("dotenv").config({
 
 app.use(cors());
 app.use(express.json());
-app.use("/authors", authorRoutes);
-app.use("/cites", citeRoutes);
+app.use("/api/v1/authors", authorRoutes);
+app.use("/api/v1/cites", citeRoutes);
 
 require("./config/mongoose.config");
 
