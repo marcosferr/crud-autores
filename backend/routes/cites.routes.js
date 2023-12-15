@@ -1,16 +1,16 @@
 const router = require("express").Router();
 const {
   getAllCites,
-  getCite,
+  getCiteById,
   createCite,
-  updateCite,
-  deleteCite,
+  updateCiteById,
+  deleteCiteById,
 } = require("../controllers/cites.controller");
 
 router.get("/", getAllCites);
-router.get("/:id", getCite);
+router.get("/:id", getCiteById);
 router.post("/", createCite);
-router.put("/:id", updateCite);
-router.delete("/:id", deleteCite);
+router.put("/:id", updateCiteById);
+router.delete("/:id", deleteCiteById);
 
 module.exports = router;
